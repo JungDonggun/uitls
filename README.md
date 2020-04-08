@@ -12,13 +12,11 @@ export const emailCheck = (email: string) => {
 };
 
 
-export const numberFormat = (inputNumber: string) => {
-  return inputNumber.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
-};
+export const numberFormat = (inputNumber: string) => inputNumber.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')
 
 
 export const replaceComma = (pStr: string) => {
-  var strCheck = /\,/g;
+  const strCheck = /\,/g;
   pStr = pStr.replace(strCheck, '');
   return pStr;
 };
