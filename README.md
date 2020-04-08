@@ -1,5 +1,6 @@
 # uitls.js
 
+```c
 export const emailCheck = (email: string) => {
   const emailCheck = /^[A-Za-z0-9_.-]+@[A-Za-z0-9-]+.[A-Za-z0-9-]+/;
   if (emailCheck.test(email) === false) {
@@ -21,3 +22,4 @@ export const replaceComma = (pStr: string) => {
   pStr = pStr.replace(strCheck, '');
   return pStr;
 };
+```
