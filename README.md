@@ -1,4 +1,4 @@
-# uitls.js
+# uitls
 
 ```c
 export const emailCheck = (email: string) => {
