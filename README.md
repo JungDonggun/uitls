@@ -20,4 +20,12 @@ export const replaceComma = (pStr: string) => {
   pStr = pStr.replace(strCheck, '');
   return pStr;
 };
+
+export const getTokenForSIZLAPI = async () => {
+  const Authorization = await AsyncStorage.getItem('@USER_AUTH_TOKEN');
+
+  return {
+    headers: { Authorization }
+  }
+};
 ```
