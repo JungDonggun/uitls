@@ -11,7 +11,7 @@ export const emailCheck = (email: string) => {
   }
   // alert('이메일 형식만 체크됩니다.')
   return true
-};
+}
 
 
 export const numberFormat = (inputNumber: string) => inputNumber.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')
@@ -21,13 +21,6 @@ export const replaceComma = (pStr: string) => {
   const strCheck = /\,/g
   pStr = pStr.replace(strCheck, '')
   return pStr
-};
-
-export const getTokenForSIZLAPI = async () => {
-  const Authorization = await AsyncStorage.getItem('@USER_AUTH_TOKEN')
-
-  return {
-    headers: { Authorization }
-  }
 }
+
 ```
