@@ -1,8 +1,6 @@
 # uitls
 
 ```c
-import AsyncStorage from '@react-native-community/async-storage'
-
 exprt const newArray(index: numer) => {
   return new Array(index).fill('_').map(() => '')
 }
