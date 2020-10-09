@@ -3,6 +3,10 @@
 ```c
 import AsyncStorage from '@react-native-community/async-storage'
 
+exprt const newArray(index: numer) => {
+  return new Array(index).fill('_').map(() => '')
+}
+
 export const emailCheck = (email: string) => {
   const emailCheck = /^[A-Za-z0-9_.-]+@[A-Za-z0-9-]+.[A-Za-z0-9-]+/
   if (emailCheck.test(email) === false) {
