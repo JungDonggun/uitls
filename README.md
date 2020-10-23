@@ -1,7 +1,7 @@
 # uitls
 
 ```c
-exprt const newArray(index: numer) => {
+export const newArray(index: numer) => {
   return new Array(index).fill('_').map(() => '')
 }
 
