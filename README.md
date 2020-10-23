@@ -1,4 +1,4 @@
-# uitls
+# utils
 
 ```c
 export const newArray(index: numer) => {
